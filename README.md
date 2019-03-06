@@ -1,21 +1,21 @@
-# Backend - .Net REST API
+# .Net REST API - Backend
 
-Base backend application with a simple CRUD.
+Simple CRUD backend application.
 
 It was written thinking about:
  - OOP - Object oriented programming
  - DDD - Domain driven design
  - TDD - Test driven development
-
+ - SOLID
+ 
 ## Coded with:
- - [.NET Core (v 2.2)](https://dotnet.microsoft.com)
- - [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/)
-
- - [xUnit](https://xunit.github.io/)
- - [FluentValidation](https://fluentvalidation.net/)
-
+ * **[.NET Core (v 2.2)](https://dotnet.microsoft.com)**
+ * [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/)
+ 
+ * [FluentValidation](https://fluentvalidation.net/)
+ * [xUnit](https://xunit.github.io/)
+ 
 ## How to run
-In the root directory:
 ```
 dotnet restore
 cd Crud.Infrastructure
