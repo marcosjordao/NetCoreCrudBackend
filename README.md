@@ -14,6 +14,7 @@ It was written thinking about:
  
  * [FluentValidation](https://fluentvalidation.net/)
  * [xUnit](https://xunit.github.io/)
+ * [Swashbuckle Swagger](https://swagger.io/)
  
 ## How to run
 ```
