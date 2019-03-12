@@ -9,28 +9,28 @@ namespace Crud.Infrastructure.Repositories.Configurations
 {
     public class PersonEntityConfiguration : IEntityTypeConfiguration<Person>
     {
-        public void Configure(EntityTypeBuilder<Person> configuration)
+        public void Configure(EntityTypeBuilder<Person> builder)
         {
             // Table
-            configuration.ToTable("Person");
+            builder.ToTable("Person");
 
             // Id
-            configuration.HasKey(f => f.Id);
-            configuration.Property(f => f.Id)
+            builder.HasKey(f => f.Id);
+            builder.Property(f => f.Id)
                          .UseSqlServerIdentityColumn();
             
             // Name
-            configuration.Property(f => f.Name).HasMaxLength(70)
+            builder.Property(f => f.Name).HasMaxLength(70)
                                                .IsRequired();
 
             // Email
-            configuration.OwnsOne(f => f.Email)
+            builder.OwnsOne(f => f.Email)
                          .Property(f => f.Address)
                          .HasMaxLength(60)
                          .HasColumnName("Email");
 
             // Telefone
-            configuration.Property(f => f.Phone).HasMaxLength(20);
+            builder.Property(f => f.Phone).HasMaxLength(20);
 
         }
     }

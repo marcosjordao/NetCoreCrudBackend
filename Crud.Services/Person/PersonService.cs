@@ -13,7 +13,7 @@ namespace Crud.Services
     public class PersonService: IPersonService
     {
 
-        private IPersonRepository _personRepository;
+        private readonly IPersonRepository _personRepository;
 
         public PersonService(IPersonRepository personRepository)
         {

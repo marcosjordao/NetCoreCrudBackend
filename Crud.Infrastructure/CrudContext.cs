@@ -16,7 +16,6 @@ namespace Crud.Infrastructure
         {
             string dataFilename = Path.GetFullPath(@"..\App_Data\CrudDb.mdf");
 
-            // optionsBuilder.UseSqlServer($@"Data Source=(LocalDb)\v11.0;AttachDbFilename={dataFilename};Initial Catalog=CrudDb;Integrated Security=True;MultipleActiveResultSets=True");
             optionsBuilder.UseSqlServer($@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dataFilename};Initial Catalog=CrudDb;Integrated Security=True;MultipleActiveResultSets=True");
         }
 

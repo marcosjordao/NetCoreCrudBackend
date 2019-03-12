@@ -73,7 +73,6 @@ namespace Crud.Infrastructure.Repositories.Base
 
         public async Task UpdateAsync(TEntity entity)
         {
-            //_dbContext.Entry(entity).State = EntityState.Modified;
             _dbContext.Update(entity);
 
             await _dbContext.SaveChangesAsync();
